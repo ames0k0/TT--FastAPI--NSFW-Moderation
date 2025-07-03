@@ -12,9 +12,20 @@ git clone \
 
 ### Запуск проекта локально
 <details>
-  <summary>Зависимости</summary>
+  <summary>Среда разработки</summary>
   <pre>
-python -V  # Python 3.12.8</pre>
+uname -sori   # Linux 6.8.0-62-generic x86_64 GNU/Linux
+python -V     # Python 3.12.8</pre>
+</details>
+<details>
+  <summary>Использованные технологии</summary>
+
+| Название | Ссылки                        |
+| :--------: | :-------------------------: |
+| FastAPI  | https://fastapi.tiangolo.com  |
+| Uvicorn  | https://www.uvicorn.org/      |
+| httpx    | https://www.python-httpx.org/ |
+
 </details>
 
 ```bash
@@ -73,3 +84,7 @@ fastapi run src/main.py
   }
   ```
 </details>
+
+---
+
+<p align="center"><img src="./_readme/rest-api.png" /></p>
