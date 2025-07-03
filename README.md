@@ -20,11 +20,12 @@ python -V     # Python 3.12.8</pre>
 <details>
   <summary>Использованные технологии</summary>
 
-| Название | Ссылки                        |
-| :--------: | :-------------------------: |
-| FastAPI  | https://fastapi.tiangolo.com  |
-| Uvicorn  | https://www.uvicorn.org/      |
-| httpx    | https://www.python-httpx.org/ |
+| Название | Ссылки                            |
+| :--------: | :-----------------------------: |
+| FastAPI  | https://fastapi.tiangolo.com      |
+| Pydantic | https://docs.pydantic.dev/latest  |
+| HTTPX    | https://www.python-httpx.org/     |
+| Uvicorn  | https://www.uvicorn.org/          |
 
 </details>
 
