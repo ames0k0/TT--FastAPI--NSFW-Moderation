@@ -1,6 +1,6 @@
 # Сервис модерации изображений
 Сервер, который принимает изображение и отправляет его в бесплатный сервис модерации,<br />
-чтобы понять — есть ли на нём нежелательный контент
+чтобы понять — есть ли на нём нежелательный контент - [ТЗ](./_readme/TestTask.pdf)
 
 ### Скачивание проекта
 ```bash
@@ -28,7 +28,7 @@ source env/bin/activate
 # Скачивание зависимостей
 pip install -r requirements.txt
 # Запуск проекта
-python main.py
+fastapi run src/main.py
 ```
 
 | Сервис                        | Документация / SwaggerUI                  |
@@ -46,16 +46,24 @@ python main.py
 
   ```bash
   curl -X 'POST' \
-  'http://127.0.0.1:8000/moderate' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@test.jpg;type=application/pdf'
+    'http://127.0.0.1:8000/moderate' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: multipart/form-data' \
+    -F 'file=@./data/ok.jpg;type=image/jpeg'
   ```
 
   ```json
   {
     "status": "OK"
   }
+  ```
+
+  ```bash
+  curl -X 'POST' \
+    'http://127.0.0.1:8000/moderate' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: multipart/form-data' \
+    -F 'file=@./data/nsfw.jpg;type=image/jpeg'
   ```
 
   ```json
