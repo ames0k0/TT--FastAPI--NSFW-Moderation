@@ -46,16 +46,24 @@ fastapi run src/main.py
 
   ```bash
   curl -X 'POST' \
-  'http://127.0.0.1:8000/moderate' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@test.jpg;type=application/pdf'
+    'http://127.0.0.1:8000/moderate' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: multipart/form-data' \
+    -F 'file=@./data/ok.jpg;type=image/jpeg'
   ```
 
   ```json
   {
     "status": "OK"
   }
+  ```
+
+  ```bash
+  curl -X 'POST' \
+    'http://127.0.0.1:8000/moderate' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: multipart/form-data' \
+    -F 'file=@./data/nsfw.jpg;type=image/jpeg'
   ```
 
   ```json
