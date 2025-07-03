@@ -28,7 +28,7 @@ source env/bin/activate
 # Скачивание зависимостей
 pip install -r requirements.txt
 # Запуск проекта
-python main.py
+fastapi run src/main.py
 ```
 
 | Сервис                        | Документация / SwaggerUI                  |
