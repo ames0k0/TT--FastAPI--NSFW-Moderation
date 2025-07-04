@@ -88,4 +88,7 @@ fastapi run src/main.py
 
 ---
 
-<p align="center"><img src="./_readme/rest-api.png" /></p>
+<p align="center">
+  <img src="./_readme/rest-api.png" />
+  <img src="./_readme/FossFLOW-Diagram.png" />
+</p>
